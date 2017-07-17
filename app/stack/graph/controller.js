@@ -8,7 +8,9 @@ export default Ember.Controller.extend({
   noServices: false,
   actions: {
     dismiss: function() {
-      this.set('showServiceInfo',false);
+      // this.set('showServiceInfo',false);
+      this.set('model.showServiceInfo', false);
+      this.set('model.selectedService', null);
     },
     setNoServices: function(val) {
       this.set('noServices', val);

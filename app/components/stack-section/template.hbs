@@ -85,9 +85,9 @@
       <div class="r-p20 pull-right">
         <label>{{t 'stackSection.tags'}}:&nbsp;</label>
           {{#each model.tags as |tag|}}
-            
+
             {{#link-to "stacks" (query-params tags=tag)}}<span class="badge">{{tag}}</span>{{/link-to}}
-            
+
           {{/each}}
         </div>
       {{/if}}

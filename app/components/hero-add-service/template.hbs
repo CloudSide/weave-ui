@@ -1,14 +1,20 @@
 {{#if showUser}}
   <section class="well welcome">
     <h2>{{t 'heroAddService.service.header'}}</h2>
-    <p>
+    <!-- <p>
       {{t 'heroAddService.service.paragraph1' appName=settings.appName}}
     </p>
     <p>
       {{t 'heroAddService.service.paragraph2' appName=settings.appName}}
-      {{#if settings.isRancher}}<a href="{{settings.docsBase}}/cattle/adding-services/" target="_blank">{{t 'heroAddService.service.contentLink'}}</a>{{/if}}
+      {{#if settings.isRancher1}}<a href="{{settings.docsBase}}/cattle/adding-services/" target="_blank">{{t 'heroAddService.service.contentLink'}}</a>{{/if}}
+    </p> -->
+    <p>
+        请前往“应用商店”选择应用并安装
     </p>
-    <button role="button" class="btn btn-primary" {{action "newService"}}>{{t 'heroAddService.addService'}}</button>
+    {{!-- <p>
+        也可以安装其他Weave内置服务，如API网关、健康监控、升级支持以及高可用
+    </p> --}}
+    <!-- <button role="button" class="btn btn-primary" {{action "newService"}}>{{t 'heroAddService.addService'}}</button> -->
     {{#link-to "catalog-tab" class="btn btn-primary"}}{{t 'heroAddService.linkToCatalog'}}{{/link-to}}
   </section>
 {{/if}}

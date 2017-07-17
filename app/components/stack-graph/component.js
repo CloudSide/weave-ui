@@ -186,9 +186,14 @@ export default Ember.Component.extend(ThrottledResize, {
         stackName = service.get('displayStack') + '/';
       }
 
+    //   var html = `<span data-service="${service.get('id')}"></span><i class="icon  ${activeIcon(service)}"></i>
+    //               <h4 class="clip">${stackName}${Util.escapeHtml(service.get('displayName'))}</h4>
+    //               <h6 class="count"><b>${instances}</b> container${(instances === 1 ? '' : 's')}</h6>
+    //               <h6><span class="state ${color}">${Util.escapeHtml(service.get('displayState'))}</span></h6>`;
+
       var html = `<span data-service="${service.get('id')}"></span><i class="icon  ${activeIcon(service)}"></i>
                   <h4 class="clip">${stackName}${Util.escapeHtml(service.get('displayName'))}</h4>
-                  <h6 class="count"><b>${instances}</b> container${(instances === 1 ? '' : 's')}</h6>
+                  <h6 class="count">${Util.escapeHtml(service.get('displayType'))}</h6>
                   <h6><span class="state ${color}">${Util.escapeHtml(service.get('displayState'))}</span></h6>`;
 
       g.setNode(serviceId, {

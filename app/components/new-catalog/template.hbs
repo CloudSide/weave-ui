@@ -131,7 +131,7 @@
 
 {{#if (and selectedTemplateModel (not loading))}}
   {{#if showPreview}}
-    <section>
+    <section style="display:none">
       <div class="over-hr"><span {{action "togglePreview"}}>{{t 'newCatalog.preview'}} <i class="icon {{if previewOpen 'icon-chevron-up' 'icon-chevron-down'}}"></i></span></div>
 
       {{#if previewOpen}}

@@ -82,7 +82,7 @@ var Project = Resource.extend(PolledResource, {
       { label: 'action.remove',           icon: 'icon icon-trash',        action: 'promptDelete', enabled: this.get('canRemove'), altAction: 'delete' },
       { label: 'action.restore',          icon: '',                       action: 'restore',      enabled: !!a.restore },
       { label: 'action.purge',            icon: '',                       action: 'purge',        enabled: !!a.purge },
-      { label: 'action.viewInApi',        icon: 'icon icon-external-link',action: 'goToApi',      enabled: true },
+    //   { label: 'action.viewInApi',        icon: 'icon icon-external-link',action: 'goToApi',      enabled: true },
     ];
 
 

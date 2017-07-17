@@ -36,7 +36,7 @@ var Registry = Resource.extend({
       { divider: true },
       { label: 'action.purge',      icon: '',                       action: 'purge',        enabled: !!a.purge },
       { label: 'action.restore',    icon: 'icon icon-medicalcross', action: 'restore',      enabled: !!a.restore },
-      { label: 'action.viewInApi',  icon: 'icon icon-external-link',action: 'goToApi',      enabled: true },
+    //   { label: 'action.viewInApi',  icon: 'icon icon-external-link',action: 'goToApi',      enabled: true },
       { divider: true },
       { label: 'action.edit',       icon: 'icon icon-edit',         action: 'edit',         enabled: !!a.update },
     ];

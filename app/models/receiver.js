@@ -40,7 +40,7 @@ var Receiver = Resource.extend(PolledResource, {
     var choices = [
       { label: 'action.remove',         icon: 'icon icon-trash',            action: 'promptDelete',   enabled: true, altAction: 'delete'},
       { divider: true },
-      { label: 'action.viewInApi',      icon: 'icon icon-external-link',    action: 'goToApi',        enabled: true },
+    //   { label: 'action.viewInApi',      icon: 'icon icon-external-link',    action: 'goToApi',        enabled: true },
       { label: 'action.clone',          icon: 'icon icon-copy',             action: 'clone',          enabled: true },
 //      { label: 'action.edit',           icon: 'icon icon-edit',             action: 'edit',           enabled: true },
     ];

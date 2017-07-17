@@ -105,7 +105,7 @@ var machineDriver = Resource.extend(PolledResource, {
       { label: 'action.edit',        icon: 'icon icon-edit',         action: 'edit',         enabled: !!a.update && !builtin },
       { label: 'action.remove',      icon: 'icon icon-trash',        action: 'promptDelete', enabled: !!a.remove && !builtin, altAction: 'delete'},
       { divider: true },
-      { label: 'action.viewInApi',   icon: 'icon icon-external-link',action: 'goToApi',      enabled: true },
+    //   { label: 'action.viewInApi',   icon: 'icon icon-external-link',action: 'goToApi',      enabled: true },
     ];
   }.property('actionLinks.{update,activate,deactivate,remove}','builtin'),
 
