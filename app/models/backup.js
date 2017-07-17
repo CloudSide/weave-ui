@@ -24,7 +24,7 @@ var Backup = Resource.extend({
       { label: 'action.remove',    icon: 'icon icon-trash',        action: 'promptDelete', enabled: !!a.remove, altAction: 'delete' },
       { label: 'action.restoreFromBackup', icon: 'icon icon-history', action: 'restoreFromBackup', enabled: created && volA && !!volA.restorefrombackup },
       { divider: true },
-      { label: 'action.viewInApi', icon: 'icon icon-external-link',action: 'goToApi',      enabled: true },
+    //   { label: 'action.viewInApi', icon: 'icon icon-external-link',action: 'goToApi',      enabled: true },
     ];
   }.property('actionLinks.remove','volume.actionLinks.restorefrombackup','state','volume.state'),
 

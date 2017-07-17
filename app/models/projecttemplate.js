@@ -25,7 +25,7 @@ var ProjectTemplate = Resource.extend(PolledResource, {
 //      { label: 'action.clone',            icon: 'icon icon-copy',         action: 'clone',        enabled: true},
       { divider: true },
       { label: 'action.remove',           icon: 'icon icon-trash',        action: 'promptDelete', enabled: this.get('canEdit'), altAction: 'delete' },
-      { label: 'action.viewInApi',        icon: 'icon icon-external-link',action: 'goToApi',      enabled: true },
+    //   { label: 'action.viewInApi',        icon: 'icon icon-external-link',action: 'goToApi',      enabled: true },
     ];
 
 

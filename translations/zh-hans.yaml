@@ -707,7 +707,7 @@ k8sTab:
       helpText: |
         '或通过下面的命令行直接运行 <code>kubectl</code> 命令:'
 loginPage:
-  greeting: "你好！<br>欢迎使用 {appName}"
+  greeting: "欢迎使用 {appName}"
   githubMessage: "{appName} 使用GitHub管理账号和团队。点击以下按钮以登录，我们将仅使用基本的GitHub账号信息。"
   shibbolethMessage: "{appName}使用Shibboleth管理账号。点击以下按钮以登录到设置的Shibboleth IDP."
   shibbolethError:
@@ -899,7 +899,7 @@ servicePage:
       body:
         noData: 当前没有日志事件.
   type:
-    service: 服务·
+    service: 服务
     scalinggroup: 伸缩组
     loadbalancerservice: 负载均衡
     dnsservice: 服务别名
@@ -913,7 +913,7 @@ settingsPage:
 stacksPage:
   header:
     all: 全部应用
-    user: 用户应用
+    user: 我的应用
     custom: '{name} 应用'
     tags: '"{tags}" 应用'
     infra: 基础设施应用
@@ -2090,8 +2090,8 @@ hostSettings:
   helpText:
     static1: "不要包含 <code>/v1</code> 或任何其他路径，但如果你设置了"
     static2: "在 {appName} 前面，请确保使用<code>https://</code>."
-    isRancher: '<a href="{docsBase}/installing-rancher/installing-server/basic-ssl-config/" target="_blank">SSL Termination(SSL终止) </a>'
-    sslTerm: SSL终止
+    isRancher: '<a href="{docsBase}/installing-rancher/installing-server/basic-ssl-config/" target="_blank">SSL Termination </a>'
+    sslTerm: SSL Termination
   notPublic:
     alert: |
       确定要创建的所有主机都能够连接 <code>{activeValue}</code> ？<br/> 当前地址似乎是私有IP或内部网络。
@@ -2265,7 +2265,7 @@ loginUserPass:
   userPlaceholder: '例如:jsmith'
   loginLabel: 登录
   loggingInLabel: 登录中...
-  passwordLabl: 密码
+  passwordLabel: 密码
 
 machine:
   driverAmazon:
@@ -2394,11 +2394,11 @@ machine:
       labl: 区域
 
   driverCustom:
-    step1: Start up a Linux machine somewhere and install a <a href="{docsBase}/hosts/#supported-docker-versions" target="_blank">supported version</a> of <a href="http://www.docker.com/" target="_blank" rel="noreferrer nofollow">Docker</a> on it.
+    step1: 登录您的Linux主机(CentOS 7、Ubuntu Server 16)，并且确保安装了最新版本的<a href="http://www.docker.com/" target="_blank" rel="noreferrer nofollow">Docker</a>.
     step2: "确认安全组或防火墙允许以下通讯:"
     step2li: 与其他所有主机之间的 <code>UDP</code> 端口 <code>500</code> 和 <code>4500</code> <span class="text-muted">(用于IPsec网络)</span>
     step3: '可选项: 在主机上增加标签'
-    step4: "指定用于注册这台主机的公网IP。如果留空，Rancher会自动检测IP注册。通常在主机有唯一公网IP 的情况下这是可以的。如果主机位于防火墙/NAT设备之后，或者主机同时也是运行<code>{rancherImage}</code>容器的主机时，则必须设置此IP。"
+    step4: "指定用于注册这台主机的公网IP。如果留空，Weave会自动检测IP注册。通常在主机有唯一公网IP的情况下这是可以的。如果主机位于防火墙/NAT设备之后，或者主机同时也是运行<code>Weave控制台</code>的主机时，则必须设置此IP。"
     agentIp:
         placeholder: '例如: 1.2.3.4'
     step5Copy: 将下列脚本拷贝到每一台主机上运行以注册
@@ -2776,7 +2776,7 @@ newBalancer:
     edit: 编辑负载均衡
     upgrade: 升级负载均衡
   tabs:
-    ssl: SSL终止
+    ssl: SSL Termination
     stickiness: 会话粘性
     custom: 自定义haproxy.cfg
     labels: 标签
@@ -2838,7 +2838,7 @@ newContainer:
     container: 升级容器
     vm: 升级虚拟机
     service: |
-      升级 {numServices, plural,
+      变更 {numServices, plural,
         =1 {服务}
         other {# 服务}
       }
@@ -2855,7 +2855,7 @@ newContainer:
     balancing: 负载均衡
     secrets: 密文
   selectUpgrade: 选择一个或者多个服务进行升级
-  saveUpgrade: 升级
+  saveUpgrade: 变更
   saveNew: 创建
   removeSidekick: 删除从容器
   name:
@@ -2991,7 +2991,7 @@ saveCancel:
   saved: 已保存!
   edit: 保存
   create: 创建
-  cancl: 取消
+  cancel: 取消
 
 schema:
   inputBoolean:
@@ -3204,7 +3204,7 @@ vmConsole:
   canvas: 暂不提供Canvas支持
   footerActions:
     buttonSend: 发送Ctrl-Alt-Delete
-    buttonCancl: 关闭
+    buttonCancel: 关闭
 
 
 volumeRow:
@@ -3296,7 +3296,7 @@ nav:
     library: 官方认证
     community: 社区共享
   infra:
-    tab: 基础架构
+    tab: 系统管理
     hosts: 主机
     containers: 容器
     vms: 虚拟机
@@ -3306,7 +3306,7 @@ nav:
     registries: 镜像库
     secrets: 密文
   admin:
-    tab: 系统管理
+    tab: 高级配置
     audit: 审计日志
     processes: 系统进程
     accounts: 账号设置
@@ -3372,8 +3372,8 @@ action:
   stopServices: 停止服务
   switchNamespace: 切换至此命名空间
   switchEnvironment: 切换至此环境
-  upgrade: 升级
-  upgradeOrEdit: 升级/编辑
+  upgrade: 变更
+  upgradeOrEdit: 变更/编辑
   viewConfig: 查看配置
   viewGraph: 查看图形
   viewInApi: API查看

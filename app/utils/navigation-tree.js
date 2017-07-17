@@ -212,6 +212,7 @@ const navTree = [
         route: 'containers',
         ctx: [getProjectId],
       },
+      /* 科学家
       {
         id: 'infra-vms',
         localizedLabel: 'nav.infra.vms',
@@ -234,6 +235,7 @@ const navTree = [
         route: 'secrets',
         ctx: [getProjectId],
       },
+      科学家 */
       /*
       {
         id: 'infra-backuptargets',
@@ -251,6 +253,7 @@ const navTree = [
         route: 'certificates',
         ctx: [getProjectId],
       },
+      /* 科学家
       {
         id: 'infra-registries',
         localizedLabel: 'nav.infra.registries',
@@ -258,6 +261,7 @@ const navTree = [
         route: 'registries',
         ctx: [getProjectId],
       },
+      科学家 */
     ],
   },
 
@@ -273,16 +277,16 @@ const navTree = [
     },
     submenu: [
       {
-        id: 'admin-audit',
-        localizedLabel: 'nav.admin.audit',
-        icon: 'icon icon-folder-open',
-        route: 'admin-tab.audit-logs',
-      },
-      {
         id: 'admin-accounts',
         localizedLabel: 'nav.admin.accounts',
         icon: 'icon icon-users',
         route: 'admin-tab.accounts',
+      },
+      {
+        id: 'admin-audit',
+        localizedLabel: 'nav.admin.audit',
+        icon: 'icon icon-folder-open',
+        route: 'admin-tab.audit-logs',
       },
       {
         id: 'admin-processes',
@@ -305,12 +309,14 @@ const navTree = [
         icon: 'icon icon-key',
         route: 'admin-tab.auth',
       },
+      /* 科学家
       {
         id: 'admin-machine',
         localizedLabel: 'nav.admin.machine',
         icon: 'icon icon-host',
         route: 'admin-tab.machine',
       },
+      */
       {
         id: 'admin-settings',
         localizedLabel: 'nav.admin.settings',
@@ -320,6 +326,7 @@ const navTree = [
     ],
   },
 
+  /*
   // API
   {
     id: 'api',
@@ -345,6 +352,7 @@ const navTree = [
       },
     ],
   },
+  */
 ];
 
 export function addItem(opt) {

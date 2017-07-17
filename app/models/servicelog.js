@@ -22,7 +22,7 @@ var ServiceLog = Resource.extend({
     let choices = [
       {label: 'action.viewInstance', icon: 'icon icon-container', action: 'goToInstance', enabled: !!this.get('instanceId') },
       { divider: true },
-      { label: 'action.viewInApi',      icon: 'icon icon-external-link',    action: 'goToApi',        enabled: true },
+    //   { label: 'action.viewInApi',      icon: 'icon icon-external-link',    action: 'goToApi',        enabled: true },
     ];
 
     return choices;

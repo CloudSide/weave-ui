@@ -18,7 +18,7 @@ var KubernetesStack = Stack.extend({
       { divider: true},
       { label   : 'action.edit',       icon : 'icon icon-edit',           action : 'edit',          enabled  : true },
       { label   : 'action.remove',     icon : 'icon icon-trash',          action : 'promptDelete',  enabled  : !!a.remove, altAction : 'delete'},
-      { label   : 'action.viewInApi',  icon : 'icon icon-external-link',  action : 'goToApi',       enabled  : true },
+    //   { label   : 'action.viewInApi',  icon : 'icon icon-external-link',  action : 'goToApi',       enabled  : true },
     ];
 
     return out;

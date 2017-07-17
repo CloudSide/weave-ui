@@ -51,7 +51,7 @@ export default Resource.extend({
       { label: 'action.restoreFromBackup', icon: 'icon icon-history', action: 'restoreFromBackup', enabled: created && volA && this.get('hasBackups') && !!volA.restorefrombackup },
       { label: 'action.backup',       icon: 'icon icon-hdd',          action: 'backup',           enabled: created && this.get('backupEnabled') },
       { label: 'action.deleteBackup', icon: 'icon icon-hdd',          action: 'deleteBackup',     enabled: this.get('hasBackups') },
-      { label: 'action.viewInApi',    icon: 'icon icon-external-link',action: 'goToApi',          enabled: true },
+    //   { label: 'action.viewInApi',    icon: 'icon icon-external-link',action: 'goToApi',          enabled: true },
     ];
   }.property('actionLinks.remove','backupEnabled','hasBackups','volume.actionLinks.reverttosnapshot','state','volume.state'),
 });
