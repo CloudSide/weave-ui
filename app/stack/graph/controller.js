@@ -11,6 +11,9 @@ export default Ember.Controller.extend({
       // this.set('showServiceInfo',false);
       this.set('model.showServiceInfo', false);
       this.set('model.selectedService', null);
+      // $('g.output').click();
+      $('#stack-svg svg').css('height', $('#stack-svg').height());
+      $('#stack-svg').resize();
     },
     setNoServices: function(val) {
       this.set('noServices', val);
