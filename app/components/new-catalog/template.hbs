@@ -23,11 +23,11 @@
     <div>
       <small><strong>{{t 'newCatalog.category'}}</strong> {{join-array templateResource.categoryArray}}</small>
     </div>
-    {{#if (eq templateResource.certifiedType 'rancher')}}
+    {{!-- {{#if (eq templateResource.certifiedType 'rancher')}}
       <small><strong>{{t 'newCatalog.support'}} </strong>{{t 'newCatalog.official'}}</small>
     {{else}}
       <small><strong>{{t 'newCatalog.support'}} </strong>{{t 'newCatalog.maintainedBy'}}</small>
-    {{/if}}
+    {{/if}} --}}
     {{#if templateResource.maintainer}}
       <div>
         <small><strong>{{t 'newCatalog.maintainer'}}</strong> {{templateResource.maintainer}}</small>

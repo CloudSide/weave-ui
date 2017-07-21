@@ -373,7 +373,7 @@ backupTargetsPage:
     placeholder: '例如: nfsvers=4,proto=udp'
 catalogPage:
   index:
-    header: '应用商店'
+    header: '集成中心'
     manage: 管理
     search:
       placeholder: 搜索....
@@ -561,12 +561,12 @@ helpPage:
     header: 什么是应用和服务？
     content:
       paragraph1: |
-        简单而言，服务是一组由相同docker镜像创建的容器，Rancher服务扩展了Docker的“link”概念以利用{appName}的轻量级分布式DNS服务用于服务发现。服务可以单独添加或通过应用商店部署。
+        简单而言，服务是一组由相同docker镜像创建的容器，Rancher服务扩展了Docker的“link”概念以利用{appName}的轻量级分布式DNS服务用于服务发现。服务可以单独添加或通过集成中心部署。
       paragraph2: 服务也能够利用其他{appName}内置服务，如负载均衡、健康监控、升级支持以及高可用。
       #' fixes syntax highlighting so i dont go crazy
       link: 了解更多
     addServiceLink: 管理服务
-    addCatalogLink: 从应用商店添加
+    addCatalogLink: 从集成中心添加
     noHosts: 当前环境未添加主机。请在添加服务前先添加主机。
     manageServiceLink: 管理服务
   issues:
@@ -751,7 +751,7 @@ mesosPage:
     link: 查看或添加主机
   launch:
     header: 启动
-    content: 从我们的应用商店中启动框架
+    content: 从我们的集成中心中启动框架
     button: 启动框架
   manage:
     header: 管理
@@ -918,7 +918,7 @@ stacksPage:
     tags: '"{tags}" 应用'
     infra: 基础设施应用
   actionButton: 添加应用
-  catalogButton: 从应用商店添加
+  catalogButton: 从集成中心添加
   sort:
     label: 排序
     state: 状态
@@ -1253,8 +1253,8 @@ serviceInfoPartial:
 advancedSection:
   hrText: 高级选项
 catalogSettings:
-  header: 应用商店
-  subtext: 应用商店包含应用的rancher-compose模板，用户能够在回答设置问题后简单快速的进行应用部署。
+  header: 集成中心
+  subtext: 集成中心包含应用的rancher-compose模板，用户能够在回答设置问题后简单快速的进行应用部署。
   certified:
     header:
       rancher: "{appName} 官方认证"
@@ -1271,8 +1271,8 @@ catalogSettings:
       pl: 由社区成员创建并维护的模板
   more:
     header: 更多
-    helpText: '此处可以添加自定义的应用商店。每个应用商店必须有唯一的名称和一个支持 <code>git clone</code> 操作的URL。（更多信息请参考此 <a href="https://git-scm.com/docs/git-clone#_git_urls_a_id_urls_a" target="_blank">文档</a>）'
-    addActionLabel: 添加应用商店
+    helpText: '此处可以添加自定义的集成中心。每个集成中心必须有唯一的名称和一个支持 <code>git clone</code> 操作的URL。（更多信息请参考此 <a href="https://git-scm.com/docs/git-clone#_git_urls_a_id_urls_a" target="_blank">文档</a>）'
+    addActionLabel: 添加集成中心
     name:
       label: 名称
       placeholder: '例如: mycatalog'
@@ -1475,9 +1475,9 @@ editStack:
     help: '逗号分隔的标签列表，应用列表可以根据相应的标签进行过滤。'
 
 envCatalog:
-  header: 管理应用商店
-  subtext: '可以在这里定义自定义的应用商店源，该应用商店仅对当前环境的用户可见。全局应用商店对所有环境可见，仅能由管理员在管理设置中修改。应用商店需要一个唯一的名称并且支持 <code>git clone</code> 的URL地址 (参考 <a href="https://git-scm.com/docs/git-clone#_git_urls_a_id_urls_a" target="_blank">文档</a> 以获取更多信息)。'
-  addActionLabel: 添加应用商店
+  header: 管理集成中心
+  subtext: '可以在这里定义自定义的集成中心源，该集成中心仅对当前环境的用户可见。全局集成中心对所有环境可见，仅能由管理员在管理设置中修改。集成中心需要一个唯一的名称并且支持 <code>git clone</code> 的URL地址 (参考 <a href="https://git-scm.com/docs/git-clone#_git_urls_a_id_urls_a" target="_blank">文档</a> 以获取更多信息)。'
+  addActionLabel: 添加集成中心
 stackHeader:
   backLink: "应用:"
   outputs: 输出
@@ -2022,12 +2022,12 @@ heroAddService:
   service:
     header: 创建第一个应用
     paragraph1: |
-      '服务是一组由相同docker镜像创建的容器，服务扩展了Docker的“link”概念以利用{appName}的轻量级分布式DNS服务用于服务发现。服务可以单独添加或通过应用商店部署。'
+      '服务是一组由相同docker镜像创建的容器，服务扩展了Docker的“link”概念以利用{appName}的轻量级分布式DNS服务用于服务发现。服务可以单独添加或通过集成中心部署。'
     paragraph2: '服务也能够利用其他{appName}内置服务，如负载均衡、健康监控、升级支持以及高可用。'
     contentLink: 了解更多
   addService: 定义一个服务
   addCatalog: 配置
-  linkToCatalog: 浏览应用商店
+  linkToCatalog: 浏览集成中心
 
 
 
@@ -2192,7 +2192,7 @@ k8s:
     header: 添加第一个应用
     content: |
       Stacks are deployed from the {appName} Catalog and keep a group of related Deployments, Replication Controllers, or other resources organized.
-    linkToCatalog: 从应用商店添加
+    linkToCatalog: 从集成中心添加
   newOrEditResource:
     edit: 编辑
     add: 添加
@@ -2802,7 +2802,7 @@ newCatalog:
   saveNew: 启动
   saveConfigure: 设置
   upgrade: "升级:"
-  catalog: "应用商店:"
+  catalog: "集成中心:"
   category: "类别:"
   support: "支持:"
   official: 官方认证
@@ -3288,10 +3288,10 @@ nav:
   cattle:
     tab: 应用
     all: 全部
-    user: 用户
+    user: 集成
     system: 基础设施
   catalog:
-    tab: 应用商店
+    tab: 集成中心
     all: 全部
     library: 官方认证
     community: 社区共享
