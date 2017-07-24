@@ -1,3 +1,4 @@
+{{!-- 命令
 <div class="row form-group">
   <div class="col-sm-12 col-md-2 form-label">
     <label class="form-control-static">{{t 'formCommand.command.label'}}</label>
@@ -9,6 +10,8 @@
     {{/input-or-display}}
   </div>
 </div>
+--}}
+{{!-- 入口
 <div class="row form-group">
   <div class="col-sm-12 col-md-2 form-label">
     <label class="form-control-static">{{t 'formCommand.entryPoint.label'}}</label>
@@ -19,6 +22,8 @@
     {{/input-or-display}}
   </div>
 </div>
+--}}
+{{!-- 工作目录
 <div class="row form-group">
   <div class="col-sm-12 col-md-2 form-label">
     <label class="form-control-static">{{t 'formCommand.workingDir.label'}}</label>
@@ -37,7 +42,8 @@
     </div>
   {{/if}}
 </div>
-
+--}}
+{{!-- 控制台
 {{#unless editing}}
 <div class="row form-group">
     <div class="col-sm-12 col-md-2 form-label" style="text-align: left">
@@ -85,6 +91,7 @@
     </div>
   </div>
 {{/if}}
+--}}
 
 {{#if isService}}
   <div class="row {{unless editing 'form-group'}}">
@@ -181,4 +188,3 @@
     }}
   </div>
 </div>
-

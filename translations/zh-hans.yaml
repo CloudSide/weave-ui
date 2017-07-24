@@ -2845,7 +2845,7 @@ newContainer:
   tabs:
     disks: 磁盘
     userData: 用户数据
-    command: 命令
+    command: 配置
     volumes: 卷
     networking: 网络
     security: 安全/主机

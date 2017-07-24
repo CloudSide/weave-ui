@@ -4,7 +4,7 @@
   </section>
 
 {{#if isService}}
-  <section class="horizontal-form well">
+  {{!-- <section class="horizontal-form well">
       {{#if isUpgrade}}
         {{form-upgrade
           switch=(action 'selectLaunchConfig')
@@ -33,7 +33,7 @@
         switch=(action 'selectLaunchConfig')
         showAdd=(not isUpgrade)
       }}
-  </section>
+  </section> --}}
 {{/if}}
 
 {{/unless}}
@@ -87,14 +87,14 @@
         <li role="tab" aria-controls="panel" class="tab" data-section="userdata" {{action "selectTab" "userdata"}}><a href="#">{{t 'newContainer.tabs.userData'}}</a></li>
       {{else}}
         <li role="tab" aria-controls="panel" class="tab" data-section="command" {{action "selectTab" "command"}}><a href="#">{{t 'newContainer.tabs.command'}}</a></li>
-        <li role="tab" aria-controls="panel" class="tab" data-section="volumes" {{action "selectTab" "volumes"}}><a href="#">{{t 'newContainer.tabs.volumes'}}
-</a></li>
-        <li role="tab" aria-controls="panel" class="tab" data-section="network" {{action "selectTab" "network"}}><a href="#">{{t 'newContainer.tabs.networking'}}</a></li>
+        {{!-- <li role="tab" aria-controls="panel" class="tab" data-section="volumes" {{action "selectTab" "volumes"}}><a href="#">{{t 'newContainer.tabs.volumes'}}
+</a></li> --}}
+        {{!-- <li role="tab" aria-controls="panel" class="tab" data-section="network" {{action "selectTab" "network"}}><a href="#">{{t 'newContainer.tabs.networking'}}</a></li> --}}
         <li role="tab" aria-controls="panel" class="tab" data-section="security" {{action "selectTab" "security"}}><a href="#">{{t 'newContainer.tabs.security'}}</a></li>
       {{/if}}
 
       {{#if supportsSecrets}}
-        <li role="tab" aria-controls="panel" class="tab" data-section="secrets" {{action "selectTab" "secrets"}}><a href="#">{{t 'newContainer.tabs.secrets'}}</a></li>
+        {{!-- <li role="tab" aria-controls="panel" class="tab" data-section="secrets" {{action "selectTab" "secrets"}}><a href="#">{{t 'newContainer.tabs.secrets'}}</a></li> --}}
       {{/if}}
       <li role="tab" aria-controls="panel" class="tab" data-section="healthcheck" {{action "selectTab" "healthcheck"}}><a href="#">{{t 'newContainer.tabs.healthCheck'}}</a></li>
       <li role="tab" aria-controls="panel" class="tab" data-section="labels" {{action "selectTab" "labels"}}><a href="#">{{t 'newContainer.tabs.labels'}}</a></li>
