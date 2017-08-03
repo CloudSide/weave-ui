@@ -3288,7 +3288,11 @@ nav:
   cattle:
     tab: 应用
     all: 全部
+<<<<<<< HEAD
     user: 全部
+=======
+    user: 集成
+>>>>>>> origin/1.6-dev
     system: 基础设施
   catalog:
     tab: 集成中心
