@@ -20,10 +20,12 @@
       </div>
     {{/if}}
 
-    <div class="btn-group r-ml10" style="display:none">
-      {{#link-to "service.new" (query-params stackId=model.id) classNames="btn btn-primary btn-sm"}}{{t 'stackHeader.add.service'}}{{/link-to}}
+    {{!-- <div class="btn-group r-ml10" style="display:none"> --}}
+    <div class="btn-group r-ml10">
+      {{!-- {{#link-to "service.new" (query-params stackId=model.id) classNames="btn btn-primary btn-sm"}}{{t 'stackHeader.add.service'}}{{/link-to}} --}}
       {{#unless projects.current.isWindows}}
         <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          {{t 'stackHeader.add.service'}}
           <i class="icon icon-chevron-down"></i>
           <span class="sr-only">{{t 'nav.srToggleNav'}}</span>
         </button>

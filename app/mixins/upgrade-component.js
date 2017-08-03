@@ -123,7 +123,20 @@ export default Ember.Mixin.create({
   color: Ember.computed('upgradeStatus', function() {
 
     if (this.get('reinstall')) {
-      return 'btn-default';
+      switch ( this.get('upgradeStatus') ) {
+        case NONE:
+          return 'hide';
+        case LOADING:
+        case NOTFOUND:
+        case ERROR:
+        case INPROGRESS:
+          return 'btn-disabled';
+        case REQUIRED:
+        case AVAILABLE:
+        case UPGRADED:
+        case CURRENT:
+          return 'btn-default';
+      }
     }
     switch ( this.get('upgradeStatus') ) {
       case NONE:

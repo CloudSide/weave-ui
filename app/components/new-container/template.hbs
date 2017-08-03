@@ -97,7 +97,7 @@
         {{!-- <li role="tab" aria-controls="panel" class="tab" data-section="secrets" {{action "selectTab" "secrets"}}><a href="#">{{t 'newContainer.tabs.secrets'}}</a></li> --}}
       {{/if}}
       <li role="tab" aria-controls="panel" class="tab" data-section="healthcheck" {{action "selectTab" "healthcheck"}}><a href="#">{{t 'newContainer.tabs.healthCheck'}}</a></li>
-      <li role="tab" aria-controls="panel" class="tab" data-section="labels" {{action "selectTab" "labels"}}><a href="#">{{t 'newContainer.tabs.labels'}}</a></li>
+      {{!-- <li role="tab" aria-controls="panel" class="tab" data-section="labels" {{action "selectTab" "labels"}}><a href="#">{{t 'newContainer.tabs.labels'}}</a></li> --}}
       <li role="tab" aria-controls="panel" class="tab" data-section="scheduling" {{action "selectTab" "scheduling"}}><a href="#">{{t 'newContainer.tabs.scheduling'}}</a></li>
       {{#if (and false isService)}}
         <li role="tab" aria-controls="panel" class="tab" data-section="balancing" {{action "selectTab" "balancing"}}><a href="#">{{t 'newContainer.tabs.balancing'}}</a></li>

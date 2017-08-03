@@ -99,11 +99,11 @@ var Container = Instance.extend({
       return [];
     }
 
-    var labelKeys = Object.keys(this.get('labels')||{});
-    var isSystem = !!this.get('system') || labelKeys.indexOf(C.LABEL.SYSTEM_TYPE) >= 0;
-    var isService = labelKeys.indexOf(C.LABEL.SERVICE_NAME) >= 0;
+    // var labelKeys = Object.keys(this.get('labels')||{});
+    // var isSystem = !!this.get('system') || labelKeys.indexOf(C.LABEL.SYSTEM_TYPE) >= 0;
+    // var isService = labelKeys.indexOf(C.LABEL.SERVICE_NAME) >= 0;
     var isVm = this.get('isVm');
-    var isK8s = labelKeys.indexOf(C.LABEL.K8S_POD_NAME) >= 0;
+    // var isK8s = labelKeys.indexOf(C.LABEL.K8S_POD_NAME) >= 0;
 
     var choices = [
       { label: 'action.restart',    icon: 'icon icon-refresh',      action: 'restart',      enabled: !!a.restart, bulkable: true, bulkActionName: 'Restart'},

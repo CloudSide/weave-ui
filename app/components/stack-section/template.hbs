@@ -51,11 +51,12 @@
     <div class="header-right right-divider stack-template">
       {{upgrade-btn model=model}}
       {{upgrade-btn model=model classNames="btn btn-sm btn-default" reinstall=true}}
-      {{#if showAddService111}}
+      {{#if showAddService}}
         <div class="btn-group">
-          {{#link-to "service.new" (query-params stackId=model.id) classNames="btn btn-default btn-sm"}}{{t 'stackSection.add.service'}}{{/link-to}}
+          {{!-- {{#link-to "service.new" (query-params stackId=model.id) classNames="btn btn-default btn-sm"}}{{t 'stackSection.add.service'}}{{/link-to}} --}}
           {{#unless projects.current.isWindows}}
             <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+              {{t 'stackSection.add.service'}}
               <i class="icon icon-fw icon-chevron-down"></i>
               <span class="sr-only">{{t 'nav.srToggleDropdown'}}</span>
             </button>

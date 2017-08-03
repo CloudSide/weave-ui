@@ -162,11 +162,7 @@ var Service = Resource.extend({
       { label: 'action.purge',          icon: '',                           action: 'purge',          enabled: !!a.purge},
       { divider: true },
     //   { label: 'action.viewInApi',      icon: 'icon icon-external-link',    action: 'goToApi',        enabled: true },
-<<<<<<< HEAD
     //   { label: 'action.clone',          icon: 'icon icon-copy',             action: 'clone',          enabled: !isK8s && !isSwarm && !isDriver },
-=======
-      { label: 'action.clone',          icon: 'icon icon-copy',             action: 'clone',          enabled: !isK8s && !isSwarm && !isDriver },
->>>>>>> origin/1.6-dev
       { label: 'action.edit',           icon: 'icon icon-edit',             action: 'edit',           enabled: !!a.update && !isK8s && !isSwarm && !isBalancer},
     ];
 
