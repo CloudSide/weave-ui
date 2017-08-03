@@ -146,7 +146,7 @@ var Service = Resource.extend({
     var isSwarm = this.get('isSwarm');
     var canHaveContainers = this.get('canHaveContainers');
     var isBalancer = this.get('isBalancer');
-    var isDriver = ['networkdriverservice','storagedriverservice'].includes(this.get('type').toLowerCase());
+    // var isDriver = ['networkdriverservice','storagedriverservice'].includes(this.get('type').toLowerCase());
 
     var choices = [
       { label: 'action.start',          icon: 'icon icon-play',             action: 'activate',       enabled: !!a.activate},
@@ -158,11 +158,11 @@ var Service = Resource.extend({
       { divider: true },
       { label: 'action.restart',        icon: 'icon icon-refresh'    ,      action: 'restart',        enabled: !!a.restart && canHaveContainers },
       { label: 'action.stop',           icon: 'icon icon-stop',             action: 'promptStop',     enabled: !!a.deactivate, altAction: 'deactivate'},
-      { label: 'action.remove',         icon: 'icon icon-trash',            action: 'promptDelete',   enabled: !!a.remove, altAction: 'delete'},
+    //   { label: 'action.remove',         icon: 'icon icon-trash',            action: 'promptDelete',   enabled: !!a.remove, altAction: 'delete'},
       { label: 'action.purge',          icon: '',                           action: 'purge',          enabled: !!a.purge},
       { divider: true },
     //   { label: 'action.viewInApi',      icon: 'icon icon-external-link',    action: 'goToApi',        enabled: true },
-      { label: 'action.clone',          icon: 'icon icon-copy',             action: 'clone',          enabled: !isK8s && !isSwarm && !isDriver },
+    //   { label: 'action.clone',          icon: 'icon icon-copy',             action: 'clone',          enabled: !isK8s && !isSwarm && !isDriver },
       { label: 'action.edit',           icon: 'icon icon-edit',             action: 'edit',           enabled: !!a.update && !isK8s && !isSwarm && !isBalancer},
     ];
 

@@ -113,12 +113,18 @@ export default Ember.Mixin.create({
   upgradeInfo         : null,
   upgradeStatus       : null,
 
+  reinstall           : false,
+
   init() {
     this._super(...arguments);
     this.updateStatus();
   },
 
   color: Ember.computed('upgradeStatus', function() {
+
+    if (this.get('reinstall')) {
+      return 'btn-default';
+    }
     switch ( this.get('upgradeStatus') ) {
       case NONE:
         return 'hide';

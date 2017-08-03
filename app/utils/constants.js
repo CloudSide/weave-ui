@@ -15,28 +15,28 @@ var C = {
       "label": "action.start",
       "icon": "icon icon-play",
       "action": "start",
-      "bulkActionName": "Start",
+      "bulkActionName": "启动",
     },
     {
       "label": "action.stop",
       "icon": "icon icon-stop",
       "action": "promptStop",
       "altAction": "stop",
-      "bulkActionName": "Stop",
+      "bulkActionName": "停止",
     },
     {
       "label": "action.restart",
       "icon": "icon icon-refresh",
       "action": "restart",
-      "bulkActionName": "Restart",
+      "bulkActionName": "重启",
     },
-    {
-      "label": "action.remove",
-      "icon": "icon icon-trash",
-      "action": "promptDelete",
-      "altAction": "delete",
-      "bulkActionName": "Delete",
-    },
+    // {
+    //   "label": "action.remove",
+    //   "icon": "icon icon-trash",
+    //   "action": "promptDelete",
+    //   "altAction": "delete",
+    //   "bulkActionName": "删除",
+    // },
   ],
 
   CAPABILITY: {

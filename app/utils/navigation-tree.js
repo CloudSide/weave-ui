@@ -297,12 +297,12 @@ const navTree = [
       {
         divider: true
       },
-      {
-        id: 'admin-ha',
-        localizedLabel: 'nav.admin.ha',
-        icon: 'icon icon-umbrella',
-        route: 'admin-tab.ha',
-      },
+    //   {
+    //     id: 'admin-ha',
+    //     localizedLabel: 'nav.admin.ha',
+    //     icon: 'icon icon-umbrella',
+    //     route: 'admin-tab.ha',
+    //   },
       {
         id: 'admin-access',
         localizedLabel: 'nav.admin.access',
@@ -382,15 +382,15 @@ export function get() {
 
 function getStacksSubtree() {
   let out = [
-    {
-      id: 'cattle-all',
-      localizedLabel: 'nav.cattle.all',
-      icon: 'icon icon-globe',
-      route: 'stacks',
-      ctx: [getProjectId],
-      queryParams: {which: C.EXTERNAL_ID.KIND_ALL, tags: ''},
-    },
-    { divider: true },
+    // {
+    //   id: 'cattle-all',
+    //   localizedLabel: 'nav.cattle.all',
+    //   icon: 'icon icon-globe',
+    //   route: 'stacks',
+    //   ctx: [getProjectId],
+    //   queryParams: {which: C.EXTERNAL_ID.KIND_ALL, tags: ''},
+    // },
+    // { divider: true },
     {
       id: 'cattle-user',
       localizedLabel: 'nav.cattle.user',
@@ -400,15 +400,16 @@ function getStacksSubtree() {
       queryParams: {which: C.EXTERNAL_ID.KIND_USER, tags: ''},
       condition: isOwner,
     },
-    {
-      id: 'cattle-infra',
-      localizedLabel: 'nav.cattle.system',
-      icon: 'icon icon-gear',
-      route: 'stacks',
-      ctx: [getProjectId],
-      condition: isOwner,
-      queryParams: {which: C.EXTERNAL_ID.KIND_INFRA, tags: ''},
-    }
+    // { divider: true },
+    // {
+    //   id: 'cattle-infra',
+    //   localizedLabel: 'nav.cattle.system',
+    //   icon: 'icon icon-gear',
+    //   route: 'stacks',
+    //   ctx: [getProjectId],
+    //   condition: isOwner,
+    //   queryParams: {which: C.EXTERNAL_ID.KIND_INFRA, tags: ''},
+    // }
   ];
 
   let stacks = this.get('store').all('stack');

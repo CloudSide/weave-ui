@@ -1,5 +1,11 @@
 <div class="row">
   <div class="col-md-6 form-label">
+    <label class="form-control-static">端口映射 / 服务链接</label>
+  </div>
+</div>
+
+<div class="row" style="display:none">
+  <div class="col-md-6 form-label">
     <label class="form-control-static">{{t 'formImage.label'}}*</label>
   </div>
   <div class="col-md-6 radio r-mb0">
@@ -7,7 +13,7 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row" style="display:none">
   <div class="col-xs-12">
     {{#if isVm}}
       <div class="input-group">
