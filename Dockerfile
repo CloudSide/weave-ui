@@ -1,5 +1,6 @@
 FROM node
 RUN mkdir /source
+COPY . /source
 WORKDIR /source
 # COPY package.json bower.json ./
 # COPY scripts ./scripts
@@ -9,6 +10,5 @@ RUN cnpm install -g ember-cli
 RUN cnpm install -g yarn
 # RUN bower install ember --allow-root
 # RUN npm cache clean && bower --allow-root cache clean
-COPY . /source
 RUN ./scripts/update-dependencies
 CMD ["yarn", "start", "--", "--ssl=false"]
