@@ -17,7 +17,7 @@ git submodule update
 echo "Done"
 
 echo -n "Installing NPM packages..."
-npm install
+cnpm install
 echo "Done"
 
 echo -n "Installing Bower packages..."
