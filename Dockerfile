@@ -5,6 +5,8 @@ COPY package.json bower.json ./
 COPY scripts ./scripts
 RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
 RUN cnpm install && cnpm install -g bower && bower --allow-root install
+RUN npm install -g ember-cli
+RUN ./scripts/update-dependencies
 # RUN bower install ember --allow-root
 # RUN npm cache clean && bower --allow-root cache clean
 COPY . /source
