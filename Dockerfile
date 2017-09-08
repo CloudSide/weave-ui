@@ -9,4 +9,5 @@ RUN npm install -g yarn
 RUN npm install && npm install -g bower && bower --allow-root install
 # RUN npm install && npm install -g bower && bower --allow-root  install && bower install ember --allow-root && npm cache clean && bower --allow-root cache clean
 COPY . /source
+RUN ./scripts/update-dependencies
 CMD ["yarn","start","--","--ssl=false"]
